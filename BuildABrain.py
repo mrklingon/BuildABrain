@@ -48,10 +48,8 @@ while True:
             Val = 0
             if touch1.value:
                 Val = Val +1
-                touched = time.monotonic()
             if touch2.value:
                 Val = Val +2
-                touched = time.monotonic()
 
             if Val == 1:
                 answer = "y"
@@ -59,14 +57,14 @@ while True:
                 prt("Yes",REPL)
                 time.sleep(.5)
                 if node == 0:
-                    prt("I was right!",REPL)
+                    prt("I was right!",REPL)#time to gloat
             if Val == 2:
                 answer = "n"
                 prt("No",REPL)
                 time.sleep(.5)
                 node = No[node]
                 if node == 0:
-                    prt(random.choice(oops),REPL)
+                    prt(random.choice(oops),REPL)# didn't guess, darn
 
         compthink()
 
