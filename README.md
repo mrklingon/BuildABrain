@@ -26,3 +26,41 @@ No = [0, 3, 5, 7, 0, 9, 13, 12, 0, 0, 0, 14, 0, 16, 0, 0, 0 ] #node for no answe
 note: the zeroth node should be the introduction, for Star Trek it's "Think of someone from Kirk's Enterprise."
 
 Files:
+
+* BuildABrain.py  - copy to code.py on NeoTrinkey
+* STBrain.py - Star Trek data
+* SWBrain.py - Star Wars data 
+* prt.py - lets you redirect output via HID output, just set REPL=False
+
+  Note:  if REPL=False the program will blink Neopixels until you touch one of the pads.
+
+
+Here's how it looks in action:
+
+```
+Think of someone from Kirk's Enterprise.
+Gold uniform?
+No
+Blue Uniform?
+Yes
+Vulcan?
+Yes
+Spock?
+Yes
+I was right!
+let's try again
+Think of someone from Kirk's Enterprise.
+Gold uniform?
+No
+Blue Uniform?
+No
+Male?
+Yes
+Scotty?
+No
+Are they dead?
+No
+Maybe you should talk to my programmer!
+```
+
+Give it a try - see if you can build a brain for you NeoTrinkey!
